@@ -1,5 +1,9 @@
+package src;
 import java.util.List;
 import java.util.Scanner;
+
+import src.model.Tarefa;
+import src.service.GerenciadorTarefas;
 
 public class Main {
 

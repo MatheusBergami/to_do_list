@@ -1,6 +1,9 @@
+package src.service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import src.model.Tarefa;
 
 public class GerenciadorTarefas {
     private long idTarefa;
