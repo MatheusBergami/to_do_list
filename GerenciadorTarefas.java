@@ -20,14 +20,12 @@ public class GerenciadorTarefas {
         return listaTarefas;
     }
 
-// Buscar tarefa por ID
     public Optional<Tarefa> buscarPorId(int id) {
         return listaTarefas.stream()
                 .filter(t -> t.getId() == id)
                 .findFirst();
     }
 
-    // Concluir tarefa
     public boolean concluirTarefa(int id) {
         Optional<Tarefa> tarefa = buscarPorId(id);
 
@@ -39,7 +37,6 @@ public class GerenciadorTarefas {
         return false;
     }
 
-    // Editar tarefa
     public boolean editarTarefa(int id, String novoTitulo, String novaDescricao) {
         Optional<Tarefa> tarefa = buscarPorId(id);
 
@@ -52,7 +49,6 @@ public class GerenciadorTarefas {
         return false;
     }
 
-    // Remover tarefa
     public boolean removerTarefa(int id) {
         Optional<Tarefa> tarefa = buscarPorId(id);
 
